@@ -2,6 +2,5 @@ RevMet
 ======
 
 .. toctree::
-   :hidden:
    
    tutorial

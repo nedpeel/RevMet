@@ -14,8 +14,9 @@ A number of dependencies should be installed prior to this tutorial -
 and `samtools <http://www.htslib.org/download/>`__.
 
 #. Download the `example RevMet
-   dataset <http://link.com/revmet_example.tar.gz>`__
-   from http://link.com/ and uncompress::
+   dataset <https://nbicloud-my.sharepoint.com/:u:/g/personal/peeln_nbi_ac_uk/EUbhyIrU-P1EhTv1dsNExZQBQ60hI00joX6ecbajJJRF3w?e=eImjAo>`__
+   from `here <https://nbicloud-my.sharepoint.com/:u:/g/personal/peeln_nbi_ac_uk/EUbhyIrU-P1EhTv1dsNExZQBQ60hI00joX6ecbajJJRF3w?e=eImjAo>`__
+   and uncompress::
 
      tar -xvf revmet_example.tar.gz
 
@@ -27,10 +28,10 @@ and `samtools <http://www.htslib.org/download/>`__.
 
      sh revmet_example.sh
 
-#. To view the read counts for each of species within the sample::
+#. To view the read counts for each of the constituent species::
 
      cat output/mock_mix_1_1_bin_counts.txt
 
-#. To view the read counts for each of species within the sample::
+#. To view the species composition of the sample as percentages::
 
      cat output/mock_mix_1_1_bin_percentges.txt

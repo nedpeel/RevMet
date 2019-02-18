@@ -7,7 +7,7 @@ import os
 parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter, description='Count occurrences of each skim reference in binned percent coverage files')
 parser.add_argument('binned_pc_file', type=str, help='Binned percentage coverage file.')
 parser.add_argument('illumina_reference_list', type=str, help='List of Illumina reference IDs including "unassigned".')
-parser.add_argument('min_pc', type=float, default=10, help='Minimum percent coverage.')
+parser.add_argument('min_pc', type=float, default=15, help='Minimum percent coverage.')
 parser.add_argument('max_pc', type=float, default=100, help='Maximum percent coverage.')
 args = parser.parse_args()
 # ----- end command line parsing -----

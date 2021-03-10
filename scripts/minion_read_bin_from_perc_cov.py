@@ -22,13 +22,14 @@ for id in barcode_ids:
 for line in pc_file:
     line = line.strip()
     illumina_ref,minion_read_id,pc = line.split(' ')
-    if pc > dict[minion_read_id][dict[minion_read_id].keys()[0]]:
-        old_ref_key = dict[minion_read_id].keys()[0]
+    pc = float(pc)
+    if pc > dict[minion_read_id][list(dict[minion_read_id].keys())[0]]:
+        old_ref_key = list(dict[minion_read_id].keys())[0]
         dict[minion_read_id][illumina_ref] = dict[minion_read_id][old_ref_key]
         del dict[minion_read_id][old_ref_key]
         dict[minion_read_id][illumina_ref] = pc
 
 for key in dict:
-    illumina_ref_out = dict[key].keys()[0]
+    illumina_ref_out = list(dict[key].keys())[0]
     pc_out = float(dict[key][illumina_ref_out])
     sys.stdout.write("{0} {1} {2:.3f}\n".format(key, illumina_ref_out, pc_out))
